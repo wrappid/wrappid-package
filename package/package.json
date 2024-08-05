@@ -1,0 +1,24 @@
+{
+  "name": "wrappid-package",
+  "version": "0.0.1",
+  "description": "Wrappid-package",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wrappid/service-core.git"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Wrappid",
+    "email": "wrappid.framework@gmail.com",
+    "url": "https://www.github.com/wrappid/service-core"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wrappid/service-core/issues"
+  },
+  "homepage": "https://github.com/wrappid/service-core#readme",
+  "peerDependencies": {
+   
+  }
+}

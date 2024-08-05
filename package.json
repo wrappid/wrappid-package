@@ -1,0 +1,34 @@
+{
+  "name": "wrappid-package",
+  "version": "0.0.1",
+  "description": "Wrappid-package",
+  "main": "index.js",
+  "scripts": {
+    "attributions:gen": "node ./scripts/attributions.gen.js",
+    "docs:generate": "npx typedoc package/index.ts",
+    "code:lint": "eslint --ignore-path .gitignore package",
+    "code:format": "npm run code:lint -- --fix",
+    "test": "exit 0",
+    "build:dev": "node -e \"require('fs').cpSync('./package', './dist', {recursive: true});\"",
+    "build": "npx tsc",
+    "release": "standard-version --bumpFiles ./package.json ./package/package.json ./package-lock.json ./package/package-lock.json",
+    "publish": "npm publish *.tgz --access public --registry=https://npm.pkg.github.com --scope=@wrappid"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wrappid/service-core.git"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Wrappid",
+    "email": "wrappid.framework@gmail.com",
+    "url": "https://www.github.com/wrappid/service-core"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wrappid/service-core/issues"
+  },
+  "homepage": "https://github.com/wrappid/service-core#readme",
+  "devDependencies": {
+  }
+}
